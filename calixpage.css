@@ -1,0 +1,230 @@
+/* GENERAL */
+body {
+  background: #f8f8d8;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-header .logo img {
+  height: 65px;
+  width: auto;
+}
+
+.site-header nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;  /* improved spacing */
+}
+
+/* Label stays plain */
+.site-header nav span {
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none; /* explicitly no underline */
+}
+
+/* Collection links are underlined */
+.site-header nav a {
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+/* Contact button stays styled like a button */
+.site-header .btn {
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none; /* no underline */
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.hero h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+.hero-images {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.hero-images img {
+  width: 150px;
+  border-radius: 6px;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  align-items: center;     /* vertically center text with image */
+  gap: 2rem;
+  padding: 1.5rem 2rem;    /* reduced padding */
+}
+.about img {
+  width: 220px;
+  border-radius: 6px;
+}
+.about h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+/* WHY */
+.why {
+  padding: 1.5rem 2rem;    /* less padding */
+}
+.why h2 {
+  font-size: 1.3rem;
+}
+
+/* FEATURED */
+.featured {
+  padding: 1.5rem 2rem;    /* reduced padding */
+}
+.featured-content {
+  display: flex;
+  align-items: center;     /* vertically center text with image stack */
+  gap: 2rem;               /* tighter spacing */
+}
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;               /* smaller gap between stacked images */
+}
+.featured img {
+  width: 260px;            /* slightly smaller for balance */
+  border-radius: 6px;
+}
+.featured .text {
+  max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.featured .text h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+.featured .text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* OTHER */
+.other {
+  padding: 1.5rem 2rem;    /* less padding */
+  text-align: center;
+}
+.other h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;   /* smaller gap */
+}
+.other-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;               /* less space between elements */
+  text-align: left;
+}
+.other img {
+  width: 180px;            /* slightly smaller */
+  border-radius: 6px;
+}
+.other .arrow {
+  font-size: 1.2rem;       /* smaller arrows */
+  cursor: pointer;
+  user-select: none;
+  align-self: center;
+}
+
+/* FOOTER */
+footer {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-top: 1px solid #ddd;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* center logo + socials */
+  gap: 1rem;
+}
+
+.footer-left img {
+  height: 110px;         /* bigger logo */
+  width: auto;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;           
+  justify-content: center;
+}
+
+.socials .icon {
+  display: inline-block;
+  width: 40px;       /* each icon’s width */
+  height: 40px;      /* each icon’s height */
+  background: url("images/5e60187a-c6c4-4bf7-b80e-94bad0184cc7.png") no-repeat;
+  background-size: 160px 40px; /* total size of the PNG */
+}
+
+/* Adjust based on your PNG layout */
+.socials .fb { background-position: 0 0; }
+.socials .li { background-position: -40px 0; }
+.socials .yt { background-position: -80px 0; }
+.socials .ig { background-position: -120px 0; }
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 6rem;
+}
+.footer-right h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.footer-right p {
+  margin: 0.25rem 0;
+}
+.copyright {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 1.5rem;
+}
+
+/* TODO: MAKE SURE TO USE 3 DIFFERENT TYPES OF CSS FOR FINAL VERSION */
